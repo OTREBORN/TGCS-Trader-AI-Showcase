@@ -1,4 +1,12 @@
-# TGCS Trader AI
+<p align="center">
+  <img src="assets/TGCS_Trader_AI_Logo.jpg" width="260">
+</p>
+
+<h1 align="center">TGCS Trader AI</h1>
+
+<p align="center">
+  AI-powered XAUUSD trading automation and analysis system
+</p>
 
 TGCS Trader AI is a Python-based trading automation project built around MetaTrader 5 and designed for XAUUSD analysis, trade planning, risk management, and systematic backtesting.
 
