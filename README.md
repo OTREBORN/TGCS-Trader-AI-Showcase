@@ -75,36 +75,45 @@ MetaTrader 5
 
 ## Backtesting
 
-The project has been tested against historical XAUUSD M5 data using progressively larger samples.
+The project is tested against historical XAUUSD M5 data using progressively larger samples.
 
-### 10,000-Candle Test
+### Current 5,000-Candle Historical Backtest
 
-After correcting order-block timing and adding a structural-risk filter:
+The latest historical test processed 5,000 candles, with 4,900 candles used in the final trade evaluation.
 
-* **18 completed trades**
-* **13 wins**
-* **5 losses**
-* **72.22% win rate**
-* **1% risk-model simulated profit:** +$22,984.45
-* **Maximum simulated drawdown:** $1,169.20
-* **Maximum losing streak:** 1
+Results:
 
-These results are historical simulations and are **not a guarantee of future performance**.
+* **7 completed trades**
+* **5 wins**
+* **2 losses**
+* **71.43% win rate**
+* **+8.00R total result**
+* **5.00 profit factor**
+* **6 BUY candidates**
+* **2 SELL candidates**
+* **1 planner rejection**
+* **0 open trades at test completion**
+
+### Backtest Results
+
+![TGCS Trader AI 5000-Candle Backtest](screenshots/backtest-results.png)
+
+These results are historical simulations and are **not a guarantee of future performance**. The sample size is still limited and further testing is required.
 
 ## Out-of-Sample Validation
 
-A separate unseen section of historical data was used to reduce the risk of evaluating the system only on the data used during development.
+A separate unseen section of historical data is used to reduce the risk of evaluating the system only on the data used during development.
 
-Validation results:
+Previous validation results:
 
 * **6 trades**
 * **4 wins**
 * **2 losses**
 * **66.67% win rate**
 * **+6R**
-* **Profit factor:** 4.00
+* **4.00 profit factor**
 
-The sample is still small, so further forward testing is required.
+The validation sample remains small, so additional forward testing is required.
 
 ## Risk Management
 
@@ -117,6 +126,7 @@ The system supports percentage-based risk management and evaluates:
 * Maximum structural risk
 * Broker volume limits
 * Spread conditions
+* Open-position limits
 * Duplicate-position protection
 
 The current development configuration uses a 1% risk model for testing.
@@ -133,7 +143,8 @@ The live monitoring engine can:
 * Generate trade plans
 * Produce sound alerts
 * Test demo execution
-* Prevent duplicate positions
+* Manage multiple demo positions within a configured limit
+* Monitor live balance and equity
 * Apply spread checks
 
 The production strategy and proprietary implementation remain private.
@@ -156,6 +167,7 @@ The production strategy and proprietary implementation remain private.
 * Expand risk controls
 * Continue prop-firm compatibility research
 * Build additional reporting and monitoring tools
+* Add more polished monitoring and performance dashboards
 
 ## Disclaimer
 
