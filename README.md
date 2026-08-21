@@ -149,6 +149,24 @@ The live monitoring engine can:
 
 The production strategy and proprietary implementation remain private.
 
+## Real-Money Trading
+
+TGCS Trader AI is currently being developed and tested in demo environments.
+
+For users who choose to run the system with real money, a **minimum starting balance of $250 USD is recommended**. Accounts with less than $250 are not recommended for the current risk-management configuration because small balances can make normal position sizing, spread costs, and drawdown management less practical.
+
+### Important Warnings
+
+* **Do not rely on TGCS Trader AI as a guaranteed source of income.**
+* Trading financial markets involves a real risk of losing money.
+* Historical backtests and demo results do not guarantee future performance.
+* Real-market execution can differ from backtests because of spread, slippage, liquidity, execution delays, and market conditions.
+* Users should understand the system's risk settings before enabling real-money trading.
+* Start with demo testing and only use real funds you can afford to lose.
+* **Profitability is the goal of the system, not a promise.** The project is still undergoing development, validation, and forward testing.
+
+Real-money deployment should only be considered after sufficient testing and with appropriate risk controls in place.
+
 ## Technology
 
 * Python
